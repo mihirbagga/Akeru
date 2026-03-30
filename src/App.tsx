@@ -366,7 +366,7 @@ function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-lightgray/50 mb-1">Showroom</p>
-                <p className="font-light">150 Design District, New York, NY 10013</p>
+                <p className="font-light">Delhi NCR</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -375,7 +375,7 @@ function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-lightgray/50 mb-1">Phone</p>
-                <p className="font-light">+1 (212) 555-0198</p>
+                <p className="font-light">+91 9217567234</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -384,7 +384,7 @@ function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-lightgray/50 mb-1">Email</p>
-                <p className="font-light">studio@akerulighting.com</p>
+                <p className="font-light">hello@akeru.in</p>
               </div>
             </div>
           </div>
