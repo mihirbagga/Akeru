@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-lightgray font-sans selection:bg-gold selection:text-black;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center px-8 py-3 overflow-hidden text-sm font-medium text-black bg-gold transition-all duration-300 hover:bg-gold-hover hover:shadow-[0_0_20px_rgba(201,169,110,0.4)];
+  }
+  
+  .btn-outline {
+    @apply relative inline-flex items-center justify-center px-8 py-3 overflow-hidden text-sm font-medium text-white border border-white/30 transition-all duration-300 hover:bg-white hover:text-black hover:border-white;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A96E;
+}
+
+/* Base styles for smooth map and image filters */
+.img-luxury-filter {
+  filter: contrast(1.1) brightness(0.9) saturate(1.1);
+}
