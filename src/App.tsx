@@ -2,6 +2,12 @@ import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { Mail, MapPin, Phone, Menu, X } from 'lucide-react';
 import clsx from 'clsx';
+import imgDwn from './assets/dwn.jpg';
+import imgSpt from './assets/spt.jpeg';
+import imgTwo from './assets/two.jpg';
+import imgAthree from './assets/athree.jpg';
+import imgTrack from './assets/track.jpeg';
+import imgAbout from './assets/about.png';
 
 // Constants
 const NAV_LINKS = [
@@ -13,14 +19,14 @@ const NAV_LINKS = [
 ];
 
 const RANGE_PRODUCTS = [
-  { id: 1, title: 'DOWNLIGHTS', desc: 'Precision Recessed Lighting', image: 'dwn.jpg' },
-  { id: 2, title: 'SPOT LIGHTS', desc: '', image: 'spt.jpeg' },
-  { id: 3, title: 'TRACK LIGHTS', desc: '(PREMIUM)', image: 'two.jpg' },
-  { id: 4, title: 'MAGNETIC SYSTEMS', desc: '', image: 'athree.jpg' },
-  { id: 5, title: 'PROFILE / LINEAR LIGHTS', desc: '', image: 'track.jpeg' },
-  { id: 6, title: 'SURFACE CYLINDERS', desc: '', image: 'athree.jpg' },
-  { id: 7, title: 'INGROUND LIGHTS', desc: '', image: 'track.jpeg' },
-  { id: 8, title: 'WATERPROOF LIGHTS', desc: '', image: 'spt.jpeg' },
+  { id: 1, title: 'DOWNLIGHTS', desc: 'Precision Recessed Lighting', image: imgDwn },
+  { id: 2, title: 'SPOT LIGHTS', desc: '', image: imgSpt },
+  { id: 3, title: 'TRACK LIGHTS', desc: '(PREMIUM)', image: imgTwo },
+  { id: 4, title: 'MAGNETIC SYSTEMS', desc: '', image: imgAthree },
+  { id: 5, title: 'PROFILE / LINEAR LIGHTS', desc: '', image: imgTrack },
+  { id: 6, title: 'SURFACE CYLINDERS', desc: '', image: imgAthree },
+  { id: 7, title: 'INGROUND LIGHTS', desc: '', image: imgTrack },
+  { id: 8, title: 'WATERPROOF LIGHTS', desc: '', image: imgSpt },
 ];
 
 // --- Components ---
@@ -176,7 +182,7 @@ function About() {
         >
           <div className="relative aspect-[3/4]">
             <img
-              src="../src/assets/about.png"
+              src={imgAbout}
               alt="Craftsmanship"
               className="w-full h-full object-cover img-luxury-filter"
             />
@@ -312,7 +318,7 @@ function Collections() {
               className="group cursor-pointer bg-black relative aspect-[16/9] overflow-hidden flex flex-col items-center justify-end"
             >
               <img
-                src={`/src/assets/${product.image}`}
+                src={product.image}
                 alt={product.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 img-luxury-filter opacity-40 group-hover:opacity-70"
               />
