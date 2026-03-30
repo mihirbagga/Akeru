@@ -312,7 +312,7 @@ function Collections() {
               className="group cursor-pointer bg-black relative aspect-[16/9] overflow-hidden flex flex-col items-center justify-end"
             >
               <img
-                src={`../src/assets/${product.image}`}
+                src={`/src/assets/${product.image}`}
                 alt={product.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 img-luxury-filter opacity-40 group-hover:opacity-70"
               />
